@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.slider{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    overflow: hidden;
+    background-color: #1c1c1c;
+
+}
+.slider_content{
+    width: 96%;
+    margin: 0 auto;
+    overflow: hidden;    
+}
+img{
+    width: 100%;
+    max-height: 600px;
+}
+.nav_slide{
+    position:absolute;
+    display: flex;
+    bottom: 6%;
+    right: 3%;
+}
+.dots{
+    cursor: pointer;
+    margin-left: 20px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border-radius:50% ;
+    background-color: rgb(89, 139, 247);
+    transition: all .4s ease;
+    opacity: 0.7;
+}
+
+.dots:hover{
+    opacity: 0.8;
+    background-color:white;
+}
+.dots:focus{
+    border: 1px solid white;
+
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slider_images{
+    display: flex;
+    width: 400%;
+}
+.slide_img{
+    width: 25%;
+    transition: all .6s ease;
+    margin-top:1% ;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -25%;
+}
+#r3:checked ~ .s1{
+    margin-left: -50%;
+}
+#r4:checked ~ .s1{
+    margin-left: -75%;
+}
+
+.phrase{
+    font-size: 28px;
+    color: white;
+    width: 80%;
+    margin: 3% 0;
+}
+
+@media (max-width: 850px) { 
+    .phrase{
+        font-size: 18px;
+        margin-top: 10%;
+    }
+    .nav_slide{
+        top:70%;
+        right: 43%;
+    }
+    .dots{
+        width: 8px;
+        height: 8px;
+    }
+ }
+ @media (max-width: 320px) { 
+    .phrase{
+        font-size: 12px;
+    }
+
+ }
