@@ -17,19 +17,23 @@ body{
     transform: translate(-50%, -50%);
 }
 .slider_content{
-    width: 98%;
+    width: 96%;
     margin: 0 auto;
+    margin-top: 4%;
     overflow: hidden;
 
 }
 img{
     width: 100%;
-    height: 100%;
+    height:70%;
+    background-size: cover;
 
 }
 .nav_slide{
-    margin-right: auto;
+    position: relative;
+    left: 80%;
     display: flex;
+    margin-bottom: 3%;
 }
 .dots{
     cursor: pointer;
@@ -58,6 +62,7 @@ input[name="r"]{
 .slide_img{
     width: 25%;
     transition: all .6s ease;
+    margin-top:1% ;
 }
 #r1:checked ~ .s1{
     margin-left: 0;
@@ -71,6 +76,11 @@ input[name="r"]{
 #r4:checked ~ .s1{
     margin-left: -75%;
 }
-#r1:checked ~ .first{
-    margin-left: 0;
+
+.phrase{
+    font-size: 28px;
+    color: white;
+    width: 80%;
+    margin-top: 3%;
 }
+
