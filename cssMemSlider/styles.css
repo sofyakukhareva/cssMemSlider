@@ -6,31 +6,27 @@ body{
     background-color: rgb(255, 255, 255);
 }
 .slider{
+    position: absolute;
     width: 80%;
+    left: 10%;
     overflow: hidden;
     background-color: #1c1c1c;
-}
-.middle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
 }
 .slider_content{
     width: 96%;
     margin: 0 auto;
-    overflow: hidden;
-
+    overflow: hidden;    
 }
 img{
     width: 100%;
-    background-size: cover;
+    max-height: 600px;
 }
 .nav_slide{
-    position: absolute;
-    right: 3%;
-    bottom: 5%;
+    position:absolute;
     display: flex;
+    bottom: 6%;
+    right: 3%;
 }
 .dots{
     cursor: pointer;
@@ -46,8 +42,11 @@ img{
 
 .dots:hover{
     opacity: 0.8;
-    background-color: transparent;
-    border: 1px solid rgb(89, 139, 247);
+    background-color:white;
+}
+.dots:focus{
+    border: 1px solid white;
+
 }
 input[name="r"]{
     position: absolute;
@@ -61,8 +60,8 @@ input[name="r"]{
     width: 25%;
     transition: all .6s ease;
     margin-top:1% ;
-
 }
+
 #r1:checked ~ .s1{
     margin-left: 0;
 }
@@ -89,7 +88,7 @@ input[name="r"]{
         margin-top: 10%;
     }
     .nav_slide{
-        bottom:30%;
+        top:70%;
         right: 43%;
     }
     .dots{
@@ -97,8 +96,9 @@ input[name="r"]{
         height: 8px;
     }
  }
- @media (max-width: 850px) { 
+ @media (max-width: 320px) { 
     .phrase{
         font-size: 12px;
     }
+
  }
